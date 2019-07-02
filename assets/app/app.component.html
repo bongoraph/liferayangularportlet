@@ -1,0 +1,28 @@
+<div>
+	<div class="accordion" id="accordionExample">
+		<div class="card"  *ngFor="let result of distinctList">
+			<div class="card-header" id="headingOne">
+					<h2 class="mb-0">
+						<button class="btn btn-link" type="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+								{{result}}
+						</button>
+					</h2>
+			</div>
+				<div class="row" style="margin-top:20px">
+			<div *ngFor="let nestResult of nestResults" class="col-sm-6 col-md-3">
+				<div id="{{nestResult.modelValues.Category}}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" *ngIf="result == nestResult.modelValues.Category">
+					<div>
+						<div class="thumbnail">
+								<a href="{{nestResult.modelValues.URL}}" target="_blank">
+										<img [src]="returnImageUrl(nestResult.modelValues.Image)">
+										<p>{{nestResult.modelValues.Title}}<p> 
+										</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>

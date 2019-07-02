@@ -1,0 +1,11 @@
+@import 'bootstrap.min.css';
+@import 'font-awesome.min.css';
+
+.tag {
+	font-weight: bold;
+}
+
+.value {
+	font-style: italic;
+}
+

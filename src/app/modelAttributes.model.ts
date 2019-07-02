@@ -1,0 +1,20 @@
+export interface ModelAttributes {
+    versionUserName: string,
+    finderCacheEnabled: boolean,
+    groupId: number,
+    entityCacheEnabled: boolean,
+    DDMStorageId: number,
+    userName: string,
+    uuid: string,
+    userId: number,
+    version: string,
+    recordId: number,
+    companyId: number,
+    lastPublishDate?: any,
+    recordSetVersion: string,
+    modifiedDate?: any,
+    recordSetId: number,
+    versionUserId: number,
+    displayIndex?: number,
+    createDate?: any
+  }
